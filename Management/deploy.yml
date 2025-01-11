@@ -1,0 +1,36 @@
+---
+- name: Deploy and run Docker containers with specific configurations
+  hosts: workers
+  become: yes
+
+  tasks:
+    - name: Copy Dolos Agent to the worker
+      copy:
+        src: ../Dolos-Agent
+        dest: /home/{{ ansible_user }}/Desktop
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0644'
+    
+    - name: Copy dolos configure to the worker
+      copy:
+        src: files/{{ dolos_conf_file }}
+        dest: /home/{{ ansible_user }}/Desktop/Dolos-Agent/agent/dolos.conf
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0644'
+        
+    - name: Ensure run.sh has execute permission
+      file:
+        path: /home/{{ ansible_user }}/Desktop/Dolos-Agent/run.sh
+        mode: '0755' 
+      
+    - name: Ensure run.sh has execute permission
+      file:
+        path: /home/{{ ansible_user }}/Desktop/Dolos-Agent/agent/run.sh
+        mode: '0755' 
+        
+    - name: Run Docker
+      shell: |
+        cd /home/{{ ansible_user }}/Desktop/Dolos-Agent
+        ./run.sh "{{ ports | join(' ') }}" "{{ endlessh_ports | join(' ') }}"

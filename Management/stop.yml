@@ -1,0 +1,9 @@
+---
+- name: Stop specific Docker container
+  hosts: workers
+  become: yes
+
+  tasks:
+    - name: Stop container named "agent"
+      command: docker stop agent
+

@@ -1,0 +1,9 @@
+dolos_conf_file: dolos_worker1.conf
+
+ports:
+  - 4444
+  - 3333
+  
+endlessh_ports:
+  - 4567	
+
