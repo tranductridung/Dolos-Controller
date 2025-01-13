@@ -3,7 +3,7 @@
 ## Installing
 Clone this repository:
 ```bash
-git clone https://github.com/tranductridung/Dolos-Controller```
+git clone https://github.com/tranductridung/Dolos-Controller
 
 Navigate to the project directory:
 ```bash
