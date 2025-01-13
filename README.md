@@ -1,5 +1,6 @@
-# DOLOS
+# A Cyber Defense Approach Leveraging Moving Target Defense and Cyber Deception
 ## Overview
+This is a proactive defense method capable of complicating an attacker's reconnaissance phase. By combining Moving Target Defense and Cyber Deception and then embedding them into the system, this approach overcomes the weaknesses of both Cyber Deception and Moving Target Defense without consuming excessive resources or impacting the system.
 
 ## Installing
 ### Step 1: Clone the repository
