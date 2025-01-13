@@ -25,7 +25,7 @@ cp bin/agent linux/test/agent
 
 ## Configure
 ### 1. Configure MTD Modules
-Define the configuration for MTD modules in the dolos_worker.conf file (JSON format) located in the files folder. Example:
+Define the configuration for MTD modules in `dolos_worker.conf` file (JSON format) located in the `files` folder. Example:
 ```bash
 {
   "tool_1": {
@@ -37,7 +37,7 @@ Define the configuration for MTD modules in the dolos_worker.conf file (JSON for
 }
 ```
 ### 2. Configure Endlessh Tool
-Specify Endlessh-related settings in the worker.yml file located in the host_vars folder. Example:
+Specify Endlessh-related settings in the `worker.yml` file located in the `host_vars` folder. Example:
 ```bash
 dolos_conf_file: dolos_worker2.conf
 endlessh_ports:
@@ -45,7 +45,7 @@ endlessh_ports:
   - 2001
 ```
 ### 3. Configure Agent Information
-Update the inventory.ini file to specify details of the DOLOS Agents. Example:
+Update the `inventory.ini` file to specify details of the DOLOS Agents. Example:
 ```bash
 [workers]
 worker1 ansible_host=192.168.1.100 ansible_user=user1 ansible_ssh_port=22
@@ -58,7 +58,7 @@ ssh-copy-id -p SSH_port username@IP_address
 ```
 ## Usage
 ### 1. Install and Run DOLOS Agent from Controller
-To deploy and start the DOLOS Agent, execute the following from the Controller:
+To deploy and start the DOLOS Agent, execute the following from the DOLOS Controller:
 ```bash
 cd Dolos-Controller/Management
 ansible-playbook deploy.yml -i inventory.ini --ask-become-pass
@@ -68,7 +68,7 @@ To stop the DOLOS Agent, execute:
 ```bash
 ansible-playbook stop.yml -i inventory.ini --ask-become-pass
 ```
-### 3. Run DOLOS Agent without Controller
+### 3. Run DOLOS Agent without DOLOS Controller
 **With Endlessh (ports 2001 and 2002)**
 ```bash
 cd Dolos-Controller/Dolos-Agent/linux/test
