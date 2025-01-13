@@ -1,0 +1,4 @@
+140737353471104 2025/01/11:10:00:45 [CRT] :: config_load:199: unable to find the config file
+140737353471104 2025/01/11:10:00:45 [DBG] :: main_destroy:11: destroying connection pool
+140737353471104 2025/01/11:10:00:45 [DBG] :: main_destroy:14: destroying config
+140737353471104 2025/01/11:10:00:45 [DBG] :: main_destroy:17: destroying python interpreter

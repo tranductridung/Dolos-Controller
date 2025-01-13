@@ -1,0 +1,13 @@
+Timestamp=2025-01-12T10:56:09+0700, CPU_Usage=6,1%, RAM_Usage=1228MB, Disk_Read=211KB/s, Disk_Write=95KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:08:44+0700, CPU_Usage=6,1%, RAM_Usage=1202MB, Disk_Read=189KB/s, Disk_Write=59KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:08:49+0700, CPU_Usage=6%, RAM_Usage=1197MB, Disk_Read=189KB/s, Disk_Write=45KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:08:55+0700, CPU_Usage=6,1%, RAM_Usage=1197MB, Disk_Read=189KB/s, Disk_Write=3KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:10:43+0700, CPU_Usage=3,2%, RAM_Usage=1216MB, Disk_Read=186KB/s, Disk_Write=49KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:11:26+0700, CPU_Usage=6%, RAM_Usage=1224MB, Disk_Read=185KB/s, Disk_Write=39KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:14:47+0700, CPU_Usage=5,8%, RAM_Usage=1216MB, Disk_Read=180KB/s, Disk_Write=4KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:15:10+0700, CPU_Usage=6,1%, RAM_Usage=1182MB, Disk_Read=179KB/s, Disk_Write=87KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:15:15+0700, CPU_Usage=6,1%, RAM_Usage=1189MB, Disk_Read=179KB/s, Disk_Write=73KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:15:21+0700, CPU_Usage=6%, RAM_Usage=1190MB, Disk_Read=179KB/s, Disk_Write=6KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:15:26+0700, CPU_Usage=5,8%, RAM_Usage=1196MB, Disk_Read=179KB/s, Disk_Write=47KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:15:32+0700, CPU_Usage=6,1%, RAM_Usage=1189MB, Disk_Read=179KB/s, Disk_Write=34KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s
+Timestamp=2025-01-12T11:15:37+0700, CPU_Usage=5,9%, RAM_Usage=1197MB, Disk_Read=179KB/s, Disk_Write=2KB/s, Network_Receive=0.00KB/s, Network_Transmit=0.00KB/s

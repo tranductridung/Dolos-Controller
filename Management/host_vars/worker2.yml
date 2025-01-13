@@ -1,9 +1,5 @@
 dolos_conf_file: dolos_worker2.conf
 
-ports:
-  - 5555
-  - 6666
-  
 endlessh_ports:
-  - 4567	
-
+  - 22
+  - 2001

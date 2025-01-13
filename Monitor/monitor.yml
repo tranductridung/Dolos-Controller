@@ -1,0 +1,9 @@
+---
+- name: Deploy and run Docker containers with specific configurations
+  hosts: workers
+  become: yes
+
+  tasks:
+    - name: Run Docker
+      shell: "/bin/bash /home/{{ ansible_user }}/Desktop/Dolos-Agent/monitor.sh"
+

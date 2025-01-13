@@ -11,26 +11,26 @@
         owner: "{{ ansible_user }}"
         group: "{{ ansible_user }}"
         mode: '0644'
-    
+
     - name: Copy dolos configure to the worker
       copy:
         src: files/{{ dolos_conf_file }}
-        dest: /home/{{ ansible_user }}/Desktop/Dolos-Agent/agent/dolos.conf
+        dest: /home/{{ ansible_user }}/Desktop/Dolos-Agent/linux/test/agent/dolos.conf
         owner: "{{ ansible_user }}"
         group: "{{ ansible_user }}"
         mode: '0644'
-        
+
     - name: Ensure run.sh has execute permission
       file:
-        path: /home/{{ ansible_user }}/Desktop/Dolos-Agent/run.sh
-        mode: '0755' 
-      
+        path: /home/{{ ansible_user }}/Desktop/Dolos-Agent/linux/test/run.sh
+        mode: '0755'
+
     - name: Ensure run.sh has execute permission
       file:
-        path: /home/{{ ansible_user }}/Desktop/Dolos-Agent/agent/run.sh
-        mode: '0755' 
-        
+        path: /home/{{ ansible_user }}/Desktop/Dolos-Agent/linux/test/agent/run.sh
+        mode: '0755'
+
     - name: Run Docker
       shell: |
-        cd /home/{{ ansible_user }}/Desktop/Dolos-Agent
-        ./run.sh "{{ ports | join(' ') }}" "{{ endlessh_ports | join(' ') }}"
+        cd /home/{{ ansible_user }}/Desktop/Dolos-Agent/linux/test
+        ./run.sh "{{endlessh_ports | join(' ')}}"
