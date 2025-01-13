@@ -63,7 +63,7 @@ To deploy and start the DOLOS Agent, execute the following from the DOLOS Contro
 cd Dolos-Controller/Management
 ansible-playbook deploy.yml -i inventory.ini --ask-become-pass
 ```
-### Stop DOLOS Agent from DOLOS Controller
+### 2. Stop DOLOS Agent from DOLOS Controller
 To stop the DOLOS Agent, execute:
 ```bash
 ansible-playbook stop.yml -i inventory.ini --ask-become-pass
