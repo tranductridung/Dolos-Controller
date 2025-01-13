@@ -2,9 +2,8 @@
 
 CONTAINER_NAME="agent"
 
-endlessh_ports="$@"   # Chuỗi các port từ endlessh_ports
+endlessh_ports="$@"
 
-# Chuyển đổi chuỗi thành mảng
 IFS=' ' read -r -a endlessh_ports_array <<< "$endlessh_ports"
 
 sudo docker rm -f agent
